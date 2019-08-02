@@ -1,0 +1,19 @@
+.signinPage .qrcode-reader{
+    max-width: 500px;
+    width: 100%;
+}
+.signinPage .inline-form{
+    margin-bottom: 10px;
+}
+.signinPage .whitelist-ctr{
+    margin-top: 20px;
+}
+.signinPage .qr-reader-container{
+    display: flex;
+    justify-content: center;
+}
+.signinPage .player-details{
+    width: 300px;
+    background-color: #DF453D;
+    padding: 10px;
+}

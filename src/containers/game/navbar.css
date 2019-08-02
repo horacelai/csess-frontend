@@ -1,0 +1,112 @@
+.game-navbar {
+    position: relative;
+    width: 100%;
+    background-color: #000000;
+    height: 45px;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #FFFFFF;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 100px;
+    z-index: 2;
+    font-family: 'Noto Serif TC', serif;
+}
+.game-navbar .nav {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+}
+
+.nav_item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #000000;
+    align-item: center;
+}
+.nav_item::before{
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 1.3em;
+    width: 0px;
+    display: block;
+    content: "";
+    margin-bottom: -1.5em;
+    transition: width 200ms ease-in;
+}
+.nav_item:hover::before{
+    width: calc(100% + 3px);
+}
+.hambuger{
+    display: none;
+}
+.game-navbar .score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 15px;
+    background-color: #404040;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+@media (max-width:900px) {
+    .game-navbar{
+        font-size: 1em;
+        padding: 0 50px;
+    }
+    .nav_item {
+        padding: 5px 10px 10px;
+        color: #FFFFFF;
+        background-color: #000000;
+    }
+}
+
+@media (max-width: 650px) {
+    .game-navbar{
+        height: 45px;
+        display: block;
+        padding: 0;
+        z-index: 2;
+    }
+    .game-navbar .nav{
+        display: flex;
+        transform: translateY(calc(-100%));
+        transition: all 500ms ease-in;
+        flex-direction: column;
+        position: relative;
+        background-color: #000000;
+        z-index: 1;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .game-navbar.active .nav{
+        transform: translateY(calc(0%));
+        visibility: visible;
+        opacity: 1;
+    }
+    .nav_item{
+        padding: 10px 10px;
+        font-size: 1.3em;
+        box-sizing: border-box;
+        align-self: center;
+        margin-bottom: 0px;
+    }
+    .hambuger{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        padding: 2px;
+        z-index: 5;
+    }
+    .game-navbar .score{
+        left: 0px;
+        top: 0px;
+        height: 45px;
+        width: 100px;
+    }
+}

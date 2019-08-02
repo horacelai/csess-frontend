@@ -1,0 +1,12 @@
+.gamePage .logo-container{
+    padding: 20px 15px 10px;
+    background-color: #000000;
+}
+.gamePage .logo-container img{
+    width: 70%;
+    max-width: 500px;
+    pointer-events: none;
+}
+.gamePage{
+    padding-bottom: 40px;
+}

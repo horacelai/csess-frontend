@@ -1,0 +1,54 @@
+.taskPage .tasks-list{
+    margin: 10px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+.taskPage .tasks-list-item{
+    background-color: #3D85DF;
+    border-radius: 10px;
+    padding: 10px;
+}
+.taskPage .tasks-list-item h3{
+    margin: 10px 0px 5px;
+    font-weight: 600;
+}
+.taskPage .tasks-list-item .title{
+    font-weight: 600;
+    margin: 5px 0px;
+}
+.taskPage .tasks-list-item .description{
+    margin: 0px 0px 10px;
+}
+.taskPage .tasks-list-item .description img{
+    width: 100%;
+    height: auto;
+}
+.taskPage .task-controller{
+    display: flex;
+}
+.taskPage .task-controller select{
+    flex-grow: 2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 3px 5px;
+    margin: 5px;
+    font-size: 1.2em;
+}
+.taskPage .task-controller button{
+    flex-grow: 1;
+    min-width: 100px;
+    border: none;
+    margin: 5px;
+    padding: 3px;
+    width: auto;
+    overflow: visible;
+    font-size: 1em;
+    background-color: #7F4EC9;
+    color: #FFFFFF;
+    border-radius: 3px;
+    cursor: pointer;
+    min-height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

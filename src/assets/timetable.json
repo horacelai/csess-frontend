@@ -1,0 +1,30 @@
+{
+    "26/6": [
+        {
+            "timeStart": 2300,
+            "timeEnd": 2310,
+            "display": {
+                "name": "On9 Time",
+                "time": "18:00 - 20:00"
+            }
+        },
+        {
+            "timeStart": 2310,
+            "timeEnd": 2359,
+            "display": {
+                "name": "Dinner",
+                "time": "23:10 - 23:30"
+            }
+        }
+    ],
+    "27/6": [
+        {
+            "timeStart": 1733,
+            "timeEnd": 1800,
+            "display": {
+                "name": "Sleep",
+                "time": "17:00 - 18:00"
+            }
+        }
+    ]
+}

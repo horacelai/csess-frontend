@@ -1,0 +1,46 @@
+.scoresPage{
+    box-sizing: border-box;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+.scoresPage h1{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 3.5em;
+    margin: 5px 0 0px;
+    font-family: 'Noto Serif TC', serif;
+}
+.scoresPage .btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.scoresPage .rank-list-item{
+    display: flex;
+    padding: 5px 20px 5px;
+    font-size: 1.3em;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px 0px;
+    box-sizing: border-box;
+    border-bottom: #FFFFFF solid 3px;
+    font-family: 'Noto Serif TC', serif;
+}
+.scoresPage .refresh-button{
+    border: none;
+    margin: 5px 0 5px;
+    padding: 3px 3px 2px;
+    width: auto;
+    overflow: visible;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    background: transparent;
+    height: fit-content;
+    align-self: flex-start;
+    cursor: pointer;
+    width: 40px;
+}

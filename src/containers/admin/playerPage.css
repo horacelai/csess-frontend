@@ -1,0 +1,48 @@
+.playerPage .players-list{
+    margin: 10px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+.playerPage .players-list-item{
+    padding: 10px;
+    background-color: #3D85DF;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.playerPage .players-list-item .delete-icon{
+    background-color: transparent;
+    display: none;
+    justify-content: center;
+    cursor: pointer;
+    max-height: 30px;
+    border: none;
+    margin: 0px;
+    padding: 3px;
+}
+.playerPage .players-list-item:hover .delete-icon{
+    display: flex;
+}
+.playerPage .players-list-item .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.playerPage .players-list-item .text .playerName{
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 3px;
+}
+.playerPage .players-list-item .text .playerId{
+    font-size: 1em;
+}
+.playerPage .players-list-item .text .playerRole{
+    padding: 3px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 1em;
+    margin: 3px;
+    width: 70px;
+}

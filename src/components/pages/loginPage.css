@@ -1,0 +1,18 @@
+.loginPage{
+    color: #FFFFFF;
+}
+.loginPage .logo-container{
+    padding: 30px 20px 10px;
+}
+.loginPage .logo-container img{
+    width: 80%;
+    max-width: 500px;
+    pointer-events: none;
+}
+.loginPage h1{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 3.5em;
+    margin: 5px 0 0px;
+    font-family: 'Noto Serif TC', serif;
+}

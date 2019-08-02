@@ -1,0 +1,71 @@
+.teamPage .teams-list{
+    margin: 10px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+.teamPage .teams-list-item{
+    box-sizing: border-box;
+    padding: 10px;
+    border-left: #000 solid 10px;
+    background-color: #3D85DF;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.teamPage .teams-list-item .delete-icon{
+    background-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+    max-height: 30px;
+    border: none;
+    margin: 0;
+    padding: 3px;
+    display: none;
+}
+.teamPage .teams-list-item:hover .delete-icon{
+    display: flex;
+}
+.teamPage .teams-list-item .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.teamPage .teams-list-item .text .teamname{
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 3px;
+}
+.teamPage .teams-list-item .text .teamid{
+    font-size: 1em;
+}
+
+.teamPage .teams-list-item .text .score{
+    text-align: center;
+    background-color: #AAA;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 2px;
+    font-size: 1.2em;
+    min-width: 30px;
+    cursor: default;
+}
+
+.input-color-group{
+    display: flex;
+    flex-direction: row;
+}
+.input-color-group input{
+    flex-grow: 2;
+}
+.input-color-group-display{
+    text-align: center;
+    flex-grow: 1;
+    min-width: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    pointer-events: none;
+}
