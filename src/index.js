@@ -13,22 +13,22 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers';
 
-/*
-let socket = io('//'+ window.location.hostname + ':8080',{
+
+let socket = io('//'+ window.location.hostname + ':4000',{
     secure: true,
     query: {
         sessionId: localStorage.getItem('sessionId') ? localStorage.getItem('sessionId') : ''
     }
 });
-*/
 
+/*
 let socket = io('//'+ '172.104.84.210' + ':8080',{
     secure: true,
     query: {
         sessionId: localStorage.getItem('sessionId') ? localStorage.getItem('sessionId') : ''
     }
 });
-
+*/
 let socketIoMiddleware = createSocketIoMiddleware(socket, "IO:");
 
 const persistedState = localStorage.getItem('state') ? JSON.parse(localStorage.getItem('state')) : {}

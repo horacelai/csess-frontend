@@ -75,7 +75,7 @@ class NavBar extends Component{
         return (
             <div className={`game-navbar ${(this.state.tabActive && this.state.isMobile) ? 'active' : ''}`}>
                 <div className="score">
-                    {(this.props.game.score !== null)? parseInt(this.props.game.score, 10).toLocaleString('en') : 0} 分
+                    {(this.props.game.score !== null)? parseInt(this.props.game.score, 10).toLocaleString('en') : 0} 金幣
                 </div>
                 <nav className="nav">
                     {this.renderNavItem()}
